@@ -91,21 +91,19 @@ vizuly.viz.weighted_tree = function (parent) {
     //These are all d3.selection objects we use to insert and update svg elements into
     var svg, g,background, plot, plotBackground, linkPlot, nodePlot, defs;
     
-    //iOS detection for touch events to avoid click events firing twice
-    var isIos = (/iPhone|iPad/gi).test(navigator.appversion);
-    var clickOrTouch, mouseoverOrTouch, mouseoutOrTouch;
-    if (isIos) {
+    //Touch detection for touch events to avoid click events firing twice
+    var clickOrTouch = "click",
+        mouseoverOrTouch = "mouseover",
+        mouseoutOrTouch = "mouseout";
+ 
+    window.addEventListener("touchstart",function userHasTouched() {
         clickOrTouch = "touchend";
         mouseoverOrTouch = "touchstart";
         mouseoutOrTouch = "touchend";
-    } else {
-        clickOrTouch = "click"
-        mouseoverOrTouch = "mouseover";
-        mouseoutOrTouch = "mouseout";
-    };
+        alert("touched");
+        window.removeEventListener("touchstart",userHasTouched,false);
+    },false);
 
-    alert(mouseoverOrTouch);
- 
     initialize();
 
     // Here we set up all of our svg layout elements using a 'vz-XX' class namespace.  This routine is only called once
