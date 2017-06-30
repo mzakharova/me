@@ -15,6 +15,11 @@
 body {
     margin:0px;
     font-family: "Hind", sans-serif;
+    -webkit-touch-callout: none !important; /* Disable iOS long touch */
+}
+
+a {
+    -webkit-user-select: none !important; /* Disable iOS long touch */
 }
 
 @media only screen {
