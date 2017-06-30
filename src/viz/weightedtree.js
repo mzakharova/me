@@ -90,6 +90,15 @@ vizuly.viz.weighted_tree = function (parent) {
 
     //These are all d3.selection objects we use to insert and update svg elements into
     var svg, g,background, plot, plotBackground, linkPlot, nodePlot, defs;
+    
+    //iOS detection for touch events to avoid click events firing twice
+    var isIos = (/iPhone|iPad/gi).test(navigator.appversion);
+    var clickOrTouch;
+    if (isIos) {
+        clickOrTouch = "touchend"
+    } else {
+        clickOrTouch = "click"
+    };
 
     initialize();
 
@@ -256,7 +265,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var y = d.y0 ? d.y0 : rootNode.y0;
                 var x = d.x0 ? d.x0 : rootNode.x0;
                 return "translate(" + y + "," + x + ")"; })
-            .on("click touchend",  $.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
+            .on(clickOrTouch,  function (d,i) { scope.dispatch.click(this,d,i) })
             .on("dblclick", function (d,i) { scope.dispatch.dblclick(this,d,i) })
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) });
@@ -287,7 +296,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var o = {x: x, y: y};
                 return diagonal({source: o, target: o});
             })
-            .on("click touchend",  $.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
+            .on(clickOrTouch, function (d,i) { scope.dispatch.click(this,d,i) })
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) })
             .style("stroke-linecap", "round")
