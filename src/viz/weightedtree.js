@@ -8,7 +8,7 @@
  the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
  and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ The above copyright notice and this permission notice shall be iencluded in all copies or substantial portions of the Software.
 
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
  TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
@@ -256,7 +256,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var y = d.y0 ? d.y0 : rootNode.y0;
                 var x = d.x0 ? d.x0 : rootNode.x0;
                 return "translate(" + y + "," + x + ")"; })
-            .on("click touchend",  _.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
+            .on("click touchend",  $.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
             .on("dblclick", function (d,i) { scope.dispatch.dblclick(this,d,i) })
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) });
@@ -287,7 +287,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var o = {x: x, y: y};
                 return diagonal({source: o, target: o});
             })
-            .on("click touchend",  _.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
+            .on("click touchend",  $.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) })
             .style("stroke-linecap", "round")
