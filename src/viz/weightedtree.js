@@ -104,6 +104,8 @@ vizuly.viz.weighted_tree = function (parent) {
         mouseoutOrTouch = "mouseout";
     };
 
+    alert(mouseoverOrTouch);
+ 
     initialize();
 
     // Here we set up all of our svg layout elements using a 'vz-XX' class namespace.  This routine is only called once
