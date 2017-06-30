@@ -256,7 +256,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var y = d.y0 ? d.y0 : rootNode.y0;
                 var x = d.x0 ? d.x0 : rootNode.x0;
                 return "translate(" + y + "," + x + ")"; })
-            .on("click touchend",  function (d,i) { scope.dispatch.click(this,d,i) })
+            .on("click touchend",  _.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
             .on("dblclick", function (d,i) { scope.dispatch.dblclick(this,d,i) })
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) });
@@ -287,7 +287,7 @@ vizuly.viz.weighted_tree = function (parent) {
                 var o = {x: x, y: y};
                 return diagonal({source: o, target: o});
             })
-            .on("click touchend",  function (d,i) { scope.dispatch.click(this,d,i) })
+            .on("click touchend",  _.debounce(100, function (d,i) { scope.dispatch.click(this,d,i) }))
             .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
             .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) })
             .style("stroke-linecap", "round")
