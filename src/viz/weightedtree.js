@@ -93,11 +93,15 @@ vizuly.viz.weighted_tree = function (parent) {
     
     //iOS detection for touch events to avoid click events firing twice
     var isIos = (/iPhone|iPad/gi).test(navigator.appversion);
-    var clickOrTouch;
+    var clickOrTouch, mouseoverOrTouch, mouseoutOrTouch;
     if (isIos) {
-        clickOrTouch = "touchend"
+        clickOrTouch = "touchend";
+        mouseoverOrTouch = "touchstart";
+        mouseoutOrTouch = "touchend";
     } else {
         clickOrTouch = "click"
+        mouseoverOrTouch = "mouseover";
+        mouseoutOrTouch = "mouseout";
     };
 
     initialize();
@@ -267,8 +271,8 @@ vizuly.viz.weighted_tree = function (parent) {
                 return "translate(" + y + "," + x + ")"; })
             .on(clickOrTouch,  function (d,i) { scope.dispatch.click(this,d,i) })
             .on("dblclick", function (d,i) { scope.dispatch.dblclick(this,d,i) })
-            .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
-            .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) });
+            .on(mouseoverOrTouch, function (d,i) { scope.dispatch.mouseover(this,d,i) })
+            .on(mouseoutOrTouch, function (d,i) { scope.dispatch.mouseout(this,d,i) });
 
         var nodeCircle = nodeEnter.append("circle")
             .attr("class",".vz-weighted_tree-node-circle")
@@ -297,8 +301,8 @@ vizuly.viz.weighted_tree = function (parent) {
                 return diagonal({source: o, target: o});
             })
             .on(clickOrTouch, function (d,i) { scope.dispatch.click(this,d,i) })
-            .on("mouseover", function (d,i) { scope.dispatch.mouseover(this,d,i) })
-            .on("mouseout", function (d,i) { scope.dispatch.mouseout(this,d,i) })
+            .on(mouseoverOrTouch, function (d,i) { scope.dispatch.mouseover(this,d,i) })
+            .on(mouseoutOrTouch, function (d,i) { scope.dispatch.mouseout(this,d,i) })
             .style("stroke-linecap", "round")
             .style("cursor","pointer");
 
