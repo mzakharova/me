@@ -21,10 +21,8 @@
 
 //**************************************************************************************************************
 //
-//  This is a test/example file that shows you one way you could use a vizuly object.
-//  We have tried to make these examples easy enough to follow, while still using some more advanced
-//  techniques.  Vizuly does not rely on any libraries other than D3.  These examples do use jQuery and
-//  materialize.css to simplify the examples and provide a decent UI framework.
+//  Produced by the Scrutiny Unit of the House of Commons, based on the Vizuly framework by
+//  BrightPoint Consulting, Inc.
 //
 //**************************************************************************************************************
 
