@@ -100,7 +100,6 @@ vizuly.viz.weighted_tree = function (parent) {
         clickOrTouch = "touchend";
         mouseoverOrTouch = "touchstart";
         mouseoutOrTouch = "touchend";
-        alert("touched");
         window.removeEventListener("touchstart",userHasTouched,false);
     },false);
 
