@@ -61,7 +61,7 @@ vizuly.viz.weighted_tree = function (parent) {
 
 
     var colors = ["#d7667d", "#fecc5c", "#fd8d3c", "#f03b20", "#B02D5D",
-        "#9B2C67", "#982B9A", "#692DA7", "#5725AA", "#4823AF",
+        "#AF5685", "#982B9A", "#692DA7", "#5725AA", "#4823AF",
         "#d7b5d8", "#dd1c77", "#5A0C7A", "#5A0C7A"];
 
     //Measurements
