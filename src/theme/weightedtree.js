@@ -11,7 +11,7 @@ vizuly.theme.weighted_tree = function (viz) {
             name: "Axiis",                          // Skin Name
             label_color: "#333",                    // Color of the center label
             link_colors: ["#93d4ca", "#9b7f58", "#ffe806", "#6e6095", "#2fa4a4",
-                "#466c9c", "#f0505c", "#692DA7", "#5725AA", "#4823AF",
+                "#466c9c", "#f79e85", "#692DA7", "#5725AA", "#4823AF",
                 "#d7b5d8", "#dd1c77", "#5A0C7A", "#5A0C7A"],
             link_stroke: function (d, i) {
                 return d.target.vz_link_color;
