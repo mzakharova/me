@@ -33,7 +33,7 @@ Category,Level1,Level2,Level3,Level4,Budget,,GovXFer,State,Local,Total
 ,Public Services,Education,Investment,Education & Skills Funding Agency,26.36,b,,,,26.36
 ,Public Services,Education,Investment,"Social care, mobility and disadvantage",6.677,b,,,,6.677
 ,Public Services,Education,Investment,Standards and testing ,2.15,b,,,,2.15
-,Public Services,Local Government grants,Day to day Spending,Other Grants & Payments,15338.665,b,,,,15338.665
+,Public Services,Local Government grants,Day to day Spending,Other Grants incl. Business Rates Relief,15338.665,b,,,,15338.665
 ,Public Services,Local Government grants,Day to day Spending,Revenue Support Grant,1612.644,b,,,,1612.644
 ,Public Services,Local Government grants,Day to day Spending,Business Rate Retention (net),3.353,b,,,,3.353
 ,Public Services,Housing & Communities,Day to day Spending,Housing and Planning,1918.847,b,,,,1918.847
@@ -67,7 +67,7 @@ Category,Level1,Level2,Level3,Level4,Budget,,GovXFer,State,Local,Total
 ,Benefits & Pensions,Work & Pensions,Day to day Spending,Employment programmes,107,b,,,,107
 ,Benefits & Pensions,Work & Pensions,Investment,Delivery and operations,60.814,b,,,,60.814
 ,Benefits & Pensions,Work & Pensions,Investment,Other,163.831,b,,,,163.831
-,Benefits & Pensions,HMRC,Day to day Spending,Covid-19,52000,b,,,,52000
+,Benefits & Pensions,HMRC,Day to day Spending,COVID-19 Job Retention Schemes,52000,b,,,,52000
 ,Benefits & Pensions,HMRC,Day to day Spending,Personal Tax Credits,31448.676,b,,,,31448.676
 ,Benefits & Pensions,HMRC,Day to day Spending,Other Reliefs & Allowances,12230.96,b,,,,12230.96
 ,Benefits & Pensions,HMRC,Day to day Spending,Child Benefit,11786.942,b,,,,11786.942
@@ -136,7 +136,7 @@ Category,Level1,Level2,Level3,Level4,Budget,,GovXFer,State,Local,Total
 ,Infrastructure & Investment,Transport,Investment,Central Administration & ALBs,135.528,b,,,,135.528
 ,Infrastructure & Investment,Transport,Investment,Research and support,32.071,b,,,,32.071
 ,Infrastructure & Investment,Transport,Investment,Buses,4.86,b,,,,4.86
-,Infrastructure & Investment,Business & Energy,Day to day Spending,Industrial strategy and investment,13867,b,,,,13867
+,Infrastructure & Investment,Business & Energy,Day to day Spending,COVID-19 support for business,13867,b,,,,13867
 ,Infrastructure & Investment,Business & Energy,Day to day Spending,Administration & central functions,707.793,b,,,,707.793
 ,Infrastructure & Investment,Business & Energy,Day to day Spending,Nuclear decommissioning,520,b,,,,520
 ,Infrastructure & Investment,Business & Energy,Day to day Spending,Science and research,283.292,b,,,,283.292
@@ -147,7 +147,7 @@ Category,Level1,Level2,Level3,Level4,Budget,,GovXFer,State,Local,Total
 ,Infrastructure & Investment,Business & Energy,Day to day Spending,Security of energy supply,14.241,b,,,,14.241
 ,Infrastructure & Investment,Business & Energy,Investment,Science and research,9921.38,b,,,,9921.38
 ,Infrastructure & Investment,Business & Energy,Investment,Nuclear decommissioning,2086,b,,,,2086
-,Infrastructure & Investment,Business & Energy,Investment,Industrial strategy and investment,795.558,b,,,,795.558
+,Infrastructure & Investment,Business & Energy,Investment,COVID-19 support for business,795.558,b,,,,795.558
 ,Infrastructure & Investment,Business & Energy,Investment,Tackling climate change,440.845,b,,,,440.845
 ,Infrastructure & Investment,Business & Energy,Investment,Administration & central functions,153.679,b,,,,153.679
 ,Infrastructure & Investment,Business & Energy,Investment,Energy affordability,90,b,,,,90
